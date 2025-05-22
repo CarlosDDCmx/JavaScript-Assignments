@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', initDefaultCity);
 
 async function fetchWeatherData(city) {
     try {
-        // First get coordinates using Open-Meteo Geocoding API :cite[1]:cite[6]
+        // First get coordinates using Open-Meteo Geocoding API
         const geoResponse = await fetch(
             `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`
         );
@@ -27,7 +27,7 @@ async function fetchWeatherData(city) {
 
         const { latitude, longitude } = geoData.results[0];
         
-        // Get weather data using Forecast API :cite[1]:cite[6]
+        // Get weather data using Forecast API
         const weatherResponse = await fetch(
             `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&hourly=temperature_2m&daily=weather_code&timezone=auto`
         );
@@ -40,13 +40,11 @@ async function fetchWeatherData(city) {
 }
 
 function displayWeatherData(data) {
-    // Map Open-Meteo weather codes to descriptions :cite[6]
     const weatherCodes = {
         0: 'Clear sky',
         1: 'Mainly clear',
         2: 'Partly cloudy',
         3: 'Overcast',
-        // ... (add more codes as needed)
     };
 
     const current = data.current;
@@ -58,7 +56,6 @@ function displayWeatherData(data) {
     document.getElementById('humidity').textContent = current.relative_humidity_2m;
     document.getElementById('windSpeed').textContent = `${current.wind_speed_10m} km/h`;
 
-    // Update weather icon (example mapping)
     const iconMap = {
         0: '☀️',
         1: '⛅',
@@ -99,7 +96,6 @@ async function handleSearch() {
     }
 }
 
-// Event Listeners
 searchBtn.addEventListener('click', handleSearch);
 cityInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleSearch();

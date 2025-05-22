@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self';
+               connect-src 'self' https://opentdb.com;
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Quiz</h1>
+            <div id="error" class="error hidden"></div>
+        </header>
+
+        <main>
+            <div id="loader" class="loader"></div>
+            <div id="quiz" class="hidden">
+                <div id="question-container">
+                    <h2 id="question"></h2>
+                    <div id="options" class="options-container"></div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="progress">Question <span id="current">1</span>/<span id="total">10</span></div>
+                    <div class="controls">
+                        <button id="prevBtn" class="btn">Previous</button>
+                        <button id="nextBtn" class="btn">Next</button>
+                        <button id="submitBtn" class="btn hidden">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="results" class="hidden">
+            <h2>Quiz Results</h2>
+            <p>Correct Answers: <span id="correct">0</span></p>
+            <p>Incorrect Answers: <span id="incorrect">0</span></p>
+            <p>Score: <span id="percentage">0</span>%</p>
+            <button id="retryBtn" class="btn">Retry Quiz</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
