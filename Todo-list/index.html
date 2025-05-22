@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter new task...">
+                <button id="addBtn">Add Task</button>
+            </div>
+            <div id="errorMessage" class="error"></div>
+            <ul id="taskList"></ul>
+        </main>
+
+        <footer>
+            <p>Total tasks: <span id="totalTasks">0</span></p>
+            <p>Completed tasks: <span id="completedTasks">0</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
