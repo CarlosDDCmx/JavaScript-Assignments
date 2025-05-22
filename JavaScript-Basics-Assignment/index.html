@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Webpage</h1>
+        
+        <!-- Toggle Section -->
+        <div class="section">
+            <button id="toggleBtn">Hide</button>
+            <p id="toggleParagraph">This paragraph can be toggled visible/hidden using the button!</p>
+        </div>
+
+        <!-- Form Section -->
+        <div class="section">
+            <form id="demoForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="feedback"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
