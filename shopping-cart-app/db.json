@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Headphones",
+      "price": 149.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Premium noise-canceling wireless headphones",
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "title": "Smart Watch",
+      "price": 249.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Fitness tracking & heart rate monitor",
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "title": "Bluetooth Speaker",
+      "price": 89.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Portable waterproof speaker",
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "title": "Dragon's Roar",
+      "price": 24.99,
+      "image": "https://static.wikia.nocookie.net/yugioh/images/1/1a/SD1-DeckEN.png/revision/latest?cb=20160216175143",
+      "description": "Ferocious Dragons and ravaging Zombies clash in these two new Structure Decks. The Structure Decks are tournament tough, ready to play with out of the box with powerful hard to find cards. Each Deck contains 40 cards, including one brand new Ultra Rare monster, rulebook, and Dueling guide which assists a Duelist in taking his game to the next level.",
+      "category": "structure-deck"
+    },
+    {
+      "id": 5,
+      "title": "Space-Time Showdown",
+      "price": 24.99,
+      "image": "https://static.wikia.nocookie.net/yugioh/images/4/4d/YS14-DeckNA.png/revision/latest?cb=20140702135448",
+      "description": " It is the eighth Deck in the TCG's annual Starter Deck series (eighteenth overall), following Starter Deck Yugi Reloaded and Starter Deck Kaiba Reloaded.",
+      "category": "starter-deck"
+    },
+    {
+      "id": 6,
+      "title": "Eclipse of Empires Expansion Set",
+      "price": 59.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "200-card expansion introducing new faction mechanics and legendary artifact cards. Includes 10 foil cards.",
+      "category": "expansion-set"
+    },
+    {
+      "id": 7,
+      "title": "Mystic Realms Booster Box",
+      "price": 89.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "36 booster packs per box - 12 cards per pack. Chance to pull ultra-rare planar shift cards!",
+      "category": "booster-box"
+    },
+    {
+      "id": 8,
+      "title": "Chrono Clash Booster Box",
+      "price": 129.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Limited edition time-travel themed booster box. Contains 24 special foil packs with alternate art cards.",
+      "category": "booster-box"
+    },
+    {
+      "id": 9,
+      "title": "Shadow Syndicate Premium Deck Box",
+      "price": 39.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Professional-grade deck box with anti-slip matte finish. Holds 100+ sleeved cards. Includes damage counter dial.",
+      "category": "accessories"
+    },
+    {
+      "id": 10,
+      "title": "Dragon Shield Card Sleeves (100ct)",
+      "price": 14.99,
+      "image": "/assets/images/card-1.jpg",
+      "description": "Premium matte-finish card sleeves with reinforced edges. Choose from 8 different color options.",
+      "category": "accessories"
+    }
+  ]
+}
